@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bal Sangopan Yojana</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="fullHeight d-flex" >
+      <div class="sideBarWrapper position-relative" >
+        <button class="btn sideBarToogle" data-bs-toggle="button" autocomplete="off" ><i class="ph ph-caret-left"></i></button>
+        <div class="sideBar d-flex flex-column h-100" id="sidebar">
+          <div class="text-center logoBox w-100 mb-4" >
+            <img src="./Img/logo.png" width="200" alt="Balsangopan" />
+          </div>
+          <a href="#" class="sideBarLink mb-2" >
+            <i class="ph ph-gauge me-2 h5 mb-0"></i><span>Dashbord</span><i class="ph ph-caret-right ms-auto"></i>
+          </a>
+          <a href="application-list.html" class="sideBarLink mb-2" >
+            <i class="ph ph-users me-2 h5 mb-0"></i><span>Applicant List</span><i class="ph ph-caret-right ms-auto"></i>
+          </a>
+          <a href="#" class="sideBarLink logoutBtn mt-auto mb-4" >
+            <i class="ph ph-sign-out me-2 h5 mb-0"></i><span class="me-auto" >Logout</span>
+          </a>
+        </div>
+      </div>
+      <div class="flex-grow-1 p-5" >
+        <div class="container-lg pt-5" >
+      
+          <div class="card border-0" >
+            <div class="card-header border-bottom d-flex justify-content-between align-items-center" >
+              <h5 class="card-title mb-0" >Applicant List</h5>
+    
+              <div>
+                  <select class="form-select">
+                    <option value="">Sort By</option>
+                    <option>Date</option>
+                    <option>Name</option>
+                  </select>
+              </div>
+            </div>
+            <table class="table tableStyle table-hover align-middle">
+              <thead>
+                <tr>
+                  <th>Child Details</th>
+                  <th>Parent Name</th>
+                  <th>Date Of Birth</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn p-0 text-start d-flex align-items-center">
+                      <span class="me-2 d-none d-md-block" > 
+                        <img src="https://placehold.co/50" class="rounded-circle" alt="User Name" />
+                      </span>
+                      <span>
+                        <h6 class="mb-0 fw-normal" >Vinay Amar Patil</h6>
+                        <span class="d-none d-md-block" >AADAHR No: 1234567890123456</span>
+                      </span>
+                    </button>
+                  </td>
+                  <td>Amar Vijay Patil</td>
+                  <td>23 Jun 1980</td>
+                  <td>
+                    <div class="d-flex justify-content-end" >
+                      <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="View Details" class="align-items-center small btn btn-info d-none d-md-flex" ><span class="d-none d-md-block me-1" >View</span><i class="ph ph-eye"></i></button>
+                      <button title="Reject" class="d-flex align-items-center small btn btn-danger ms-3" ><span class="d-none d-md-block me-1" >Reject</span><i class="ph ph-x"></i></button>
+                      <button title="Approve" class="d-flex align-items-center small btn btn-success ms-3" ><span class="d-none d-md-block me-1" >Approve</span><i class="ph ph-check"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Applicant Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="border-bottom pb-3 mb-3 fw-normal pt-3" >Child Details</h5>
+            <div class="row" >
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Child Name</label>
+                <h6 class="mb-0 fw-normal" >Vinay Amar Patil</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Date Of Birth</label>
+                <h6 class="mb-0 fw-normal" >03 May 2014</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >AADHAR No.</label>
+                <h6 class="mb-0 fw-normal" >1234567890123456</h6>
+              </div>
+            </div>
+            <h5 class="border-bottom pb-3 mb-3 fw-normal pt-3" >Parent Details</h5>
+            <div class="row" >
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Parent Name</label>
+                <h6 class="mb-0 fw-normal" >Amar Vijay Patil</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Relationship</label>
+                <h6 class="mb-0 fw-normal" >Mother</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >AADHAR No.</label>
+                <h6 class="mb-0 fw-normal" >1234567890123456</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Mobile No.</label>
+                <h6 class="mb-0 fw-normal" >1234567890</h6>
+              </div>
+            </div>
+            
+            <h5 class="border-bottom pb-3 mb-3 fw-normal pt-3" >Bank Details</h5>
+            <div class="row" >
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Bank Name</label>
+                <h6 class="mb-0 fw-normal" >State Bank of India</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Account No.</label>
+                <h6 class="mb-0 fw-normal" >123123123123</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >IFSC Cose</label>
+                <h6 class="mb-0 fw-normal" >SBIN000000</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Account Type</label>
+                <h6 class="mb-0 fw-normal" >Savings</h6>
+              </div>
+            </div>
+            
+            <h5 class="border-bottom pb-3 mb-3 fw-normal pt-3" >Documens</h5>
+            <div class="row" >
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Child AADHAR</label>
+                <h6 class="mb-0 fw-normal" >FileName.pdf</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Child's Birth Certificate</label>
+                <h6 class="mb-0 fw-normal" >FileName.pdf</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Parent AADHAR</label>
+                <h6 class="mb-0 fw-normal" >FileName.pdf</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Bank Passbook</label>
+                <h6 class="mb-0 fw-normal" >FileName.pdf</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Scan copy of Application Form</label>
+                <h6 class="mb-0 fw-normal" >FileName.pdf</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Family Photo</label>
+                <h6 class="mb-0 fw-normal" >FileName.pdf</h6>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <label for="" class="font12" >Income Certificate</label>
+                <h6 class="mb-0 fw-normal" >FileName.pdf</h6>
+              </div>
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button title="Reject" class="d-flex align-items-center small btn btn-danger me-auto" ><span class="me-1" >Reject</span><i class="ph ph-x"></i></button>
+            <button title="Approve" class="d-flex align-items-center small btn btn-success ms-3" ><span class="me-1" >Approve</span><i class="ph ph-check"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

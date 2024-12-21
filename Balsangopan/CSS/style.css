@@ -1,0 +1,241 @@
+:root {
+  --theme-primary: #7367f0;
+  --bs-heading-color: #444050;
+  --bs-body-color: #6d6b77;
+}
+
+.btn {
+  border-radius: 4px;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--theme-primary);
+  --bs-btn-border-color: var(--theme-primary);
+  --bs-btn-hover-bg: #685dd8;
+  --bs-btn-hover-border-color: #685dd8;
+}
+
+.btn-success {
+  --bs-btn-bg: #4caf50;
+  --bs-btn-border-color: #4caf50;
+}
+
+.btn-danger {
+  --bs-btn-bg: #ef5350;
+  --bs-btn-border-color: #ef5350;
+}
+
+.btn-info {
+  --bs-btn-bg: #03a9f4;
+  --bs-btn-border-color: #03a9f4;
+  color: #FFFFFF;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f8f7fa;
+}
+
+.card-title {
+  font-weight: 400;
+  color: #444050;
+}
+
+.pageBg {
+  background: url(../Img/hero-bg.png) center center no-repeat;
+}
+
+.fullHeight {
+  height: 100vh;
+}
+
+.addharNo {
+  min-width: 500px;
+  position: relative;
+}
+.addharNo .form-control-lg {
+  padding: 20px;
+}
+.addharNo .overlayBtn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.card {
+  box-shadow: 0 0.1875rem 0.75rem 0 rgba(47, 43, 61, 0.14);
+}
+
+.bs-stepper-header {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 767px) {
+  .bs-stepper-header {
+    align-items: center;
+  }
+}
+.bs-stepper-header .step .step-trigger {
+  padding: 0;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6c757d;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 489px) {
+  .bs-stepper-header .step .step-trigger {
+    white-space: nowrap;
+  }
+}
+.bs-stepper-header .step .bs-stepper-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  width: 2.375rem;
+  height: 2.375rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background-color: rgba(47, 43, 61, 0.06);
+  color: #444050;
+}
+.bs-stepper-header .step .bs-stepper-label {
+  margin: 0;
+  max-width: 224px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: start;
+  display: inline-grid;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+}
+.bs-stepper-header .step .bs-stepper-label .bs-stepper-subtitle {
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.bs-stepper-header .step.active .bs-stepper-circle {
+  background-color: var(--theme-primary);
+  color: #fff;
+  box-shadow: 0 0.125rem 0.375rem 0 rgba(115, 103, 240, 0.3);
+}
+.bs-stepper-header .step.crossed .bs-stepper-circle {
+  color: var(--theme-primary);
+  background-color: #e9e7fd;
+}
+.bs-stepper-header .line {
+  flex: 0;
+  min-width: auto;
+  min-height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+}
+
+.bs-stepper-content {
+  background-color: #fff;
+  box-shadow: 0 0.1875rem 0.75rem 0 rgba(47, 43, 61, 0.14);
+  border-radius: 4px;
+}
+.bs-stepper-content .form-select,
+.bs-stepper-content .form-control {
+  font-size: 1rem;
+  padding: 15px;
+}
+.bs-stepper-content .form-control[type=file] {
+  padding: 0.5rem 1rem;
+}
+.bs-stepper-content .btn-light {
+  color: var(--bs-body-color);
+}
+
+.form-label {
+  margin-bottom: 0.25rem;
+  font-size: 0.8125rem;
+  color: #444050;
+}
+
+.tableStyle th {
+  color: #292630;
+  font-weight: 400;
+}
+.tableStyle td {
+  color: #444050;
+  font-size: 14px;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.w400 {
+  width: 400px;
+  max-width: 100%;
+}
+
+.sideBar {
+  min-width: 260px;
+  background-color: #FFF;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+}
+
+.sideBarLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444050;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 15px;
+}
+.sideBarLink:hover {
+  background-color: #f8f7fa;
+}
+
+.logoutBtn {
+  font-size: 20px;
+}
+
+.sideBarToogle {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideBarToogle:hover {
+  background-color: rgb(222, 226, 230);
+}
+.sideBarToogle.active + .sideBar {
+  max-width: 50px;
+  width: 50px;
+  min-width: 50px;
+}
+.sideBarToogle.active + .sideBar .logoBox {
+  width: 0px;
+  pointer-events: none;
+  opacity: 0;
+}
+.sideBarToogle.active + .sideBar .sideBarLink .ph-caret-right,
+.sideBarToogle.active + .sideBar .sideBarLink > span {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
